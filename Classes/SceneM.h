@@ -25,7 +25,16 @@ enum TransitionType		// 场景切换效果类型
 };
 
 class SceneM:public Ref{
-    
+public:
+    SceneM();
+    ~SceneM();
+    static SceneM* getInstance();
+    bool init();
+
+    void changeScene(SceneType sceneTpye,TransitionType transitionType=kTransitionNone);
+    Scene* getCurScene(){return _scene;}
+private:
+    Scene* _scene;
 };
 
 
