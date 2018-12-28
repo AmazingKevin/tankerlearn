@@ -3,7 +3,12 @@
 //
 
 #include "SceneM.h"
-
+#include "GameOverScene.h"
+#include "GameScene.h"
+#include "LevelScene.h"
+#include "LoadingScene.h"
+#include "MenuScene.h"
+#include "TransitionEx.h"
 
 
 static SceneM *s_ShareSceneM = nullptr;
