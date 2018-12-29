@@ -8,7 +8,8 @@
 USING_NS_CC;
 class LoadingScene:public Scene{
 public:
-    static Scene* createScene();
+    LoadingScene();
+    ~LoadingScene();
     virtual bool init();
     CREATE_FUNC(LoadingScene);
 };
