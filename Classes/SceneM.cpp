@@ -23,3 +23,48 @@ SceneM * SceneM::getInstance() {
 bool SceneM::init()
 {
 }
+
+void SceneM::changeScene(SceneType sceneTpye, TransitionType transitionType) {
+
+    switch (sceneTpye)
+    {
+        case kLoadingScene:
+            _scene=LoadingScene::create();
+            break;
+        case kMenuScene:
+            _scene=MenuScene::create();
+            break;
+        case kLevelScene:
+            _scene=LevelScene::create();
+            break;
+        case kGameScene:
+            _scene = GameScene::create();
+            break;
+        case kGameOverScene:
+            _scene = GameOverScene::create();
+            break;
+
+    }
+    auto director = Director::getInstance();
+    auto curScene = director->getRunningScene();
+    switch (transitionType)
+    {
+        case kTransitionExA:
+            _scene = TransitionExA::create(0.5f, _scene);
+            break;
+        case kTransitionExB:
+            _scene = TransitionExB::create(0.5f, _scene);
+            break;
+        default:
+            break;
+    }
+    if(curScene)
+    {
+        director->replaceScene(_scene);
+    }
+    else
+    {
+        director->runWithScene(_scene);
+    }
+
+}
