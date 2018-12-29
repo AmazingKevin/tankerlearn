@@ -6,11 +6,26 @@
 #define PROJ_ANDROID_MENUSCENE_H
 #include "cocos2d.h"
 USING_NS_CC;
+enum Option{//选项
+    ONE_PLAYER,//一个玩家
+    TWO_PLAYER
+
+};
 class MenuScene:public Scene{
 public:
+    MenuScene();
+    ~MenuScene();
     static Scene* createScene();
     virtual bool init();
     CREATE_FUNC(MenuScene);
+private:
+    void update(float dt);
+    void moveOver();
+    void setOption(int option);
+    Sprite *_bg;		// 菜单背景
+    Sprite *_tank;		// 坦克（箭头）
+    bool _moveOver;		// 是否移动完毕
+    int _option;		// 选项
 };
 
 #endif //PROJ_ANDROID_MENUSCENE_H

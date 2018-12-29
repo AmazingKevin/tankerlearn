@@ -3,6 +3,19 @@
 //
 
 #include "LoadingScene.h"
+#include "Global.h"
+#include "SceneM.h"
+#include "Joystick.h"
+#include "AudioM.h"
+
+LoadingScene::LoadingScene()
+{
+}
+
+LoadingScene::~LoadingScene()
+{
+}
+
 bool LoadingScene::init()
 {
     if(!Scene::init())
@@ -19,8 +32,14 @@ bool LoadingScene::init()
     for ( auto name:plist ) {
         SpriteFrameCache::getInstance()->addSpriteFramesWithFile(name);
     }
-    
-
+    AudioM::preloadAllAudio();
+    auto joystick = Joystick::create();
+    joystick->setOpacity(150);
+    Director::getInstance()->setNotificationNode(joystick);
+    /* 初始化的时候无法切换场景，故延迟一帧再切换场景 */
+    this->scheduleOnce([&](float dt){
+        SceneM::getInstance()->changeScene(kMenuScene);
+    },0.0f,"delay");
 
     return true;
 }

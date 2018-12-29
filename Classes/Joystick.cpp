@@ -83,7 +83,7 @@ bool Joystick::init()
     };
     listener->onTouchCancelled = listener->onTouchEnded;
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener,this);
-    
+
     auto keyboardEventListener = EventListenerKeyboard::create();
     keyboardEventListener->onKeyPressed = [=](EventKeyboard::KeyCode keyCode, Event* event){
         this->setKeyState(keyCode, true);
@@ -100,9 +100,83 @@ bool Joystick::init()
     return true;
 }
 
+void Joystick::setTouch(Sprite *target, Vec2 location, bool state) {
 
+    auto locationInNode = target->convertToNodeSpace(location);
+    for(auto child :this->getChildren())
+    {
+        if(child->getBoundingBox().containsPoint(locationInNode))
+        {
+            auto tag = child->getTag();
+            switch (tag)
+            {
+                case kKeyUpTag:
+                    g_keyUp = state;
+                    break;
+                case kKeyRightTag:
+                    g_keyRight = state;
+                    break;
+                case kKeyDownTag:
+                    g_keyDown = state;
+                    break;
+                case kKeyLeftTag:
+                    g_keyLeft = state;
+                    break;
+                case kKeySelectTag:
+                    g_keySelect = state;
+                    break;
+                case kKeyStartTag:
+                    g_keyStart = state;
+                    break;
+                case kKeyBTag:
+                    g_keyB = state;
+                    break;
+                case kKeyATag:
+                    g_keyA = state;
+                    break;
+                default:
+                    break;
+            }
 
+        }
 
+    }
+
+}
+
+void Joystick::setKeyState(EventKeyboard::KeyCode keyCode,bool state)
+{
+    switch(keyCode)
+    {
+        case EventKeyboard::KeyCode::KEY_W:
+            g_keyUp = state;
+            break;
+        case EventKeyboard::KeyCode::KEY_S:
+            g_keyDown = state;
+            break;
+        case EventKeyboard::KeyCode::KEY_A:
+            g_keyLeft = state;
+            break;
+        case EventKeyboard::KeyCode::KEY_D:
+            g_keyRight = state;
+            break;
+        case EventKeyboard::KeyCode::KEY_V:
+            g_keySelect = state;
+            break;
+        case EventKeyboard::KeyCode::KEY_B:
+            g_keyStart = state;
+            break;
+        case EventKeyboard::KeyCode::KEY_J:
+            g_keyB = state;
+            break;
+        case EventKeyboard::KeyCode::KEY_K:
+            g_keyA = state;
+            break;
+        default:
+            break;
+    }
+
+}
 
 
 
