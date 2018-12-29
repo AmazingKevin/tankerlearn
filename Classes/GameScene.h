@@ -11,6 +11,9 @@ public:
     static Scene* createScene();
     virtual bool init();
     CREATE_FUNC(GameScene);
+
+    virtual void onEnterTransitionDidFinish();
+
 };
 
 #endif //PROJ_ANDROID_GAMESCENE_H
