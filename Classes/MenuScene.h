@@ -15,12 +15,14 @@ class MenuScene:public Scene{
 public:
     MenuScene();
     ~MenuScene();
-    static Scene* createScene();
+    
     virtual bool init();
     CREATE_FUNC(MenuScene);
 private:
     void update(float dt);
+    /* 移动完毕,显示坦克 箭头 */
     void moveOver();
+    /* 设置坦克 所指选项 */
     void setOption(int option);
     Sprite *_bg;		// 菜单背景
     Sprite *_tank;		// 坦克（箭头）
