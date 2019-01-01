@@ -34,6 +34,9 @@
 		5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78A17EB975400C73F5D /* OpenGL.framework */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		6614474321DAF0E30036B83E /* Bonus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474121DAF0E30036B83E /* Bonus.cpp */; };
+		6614474721DAF8600036B83E /* BulletM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474521DAF8600036B83E /* BulletM.cpp */; };
+		6614474A21DAF8AE0036B83E /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474821DAF8AE0036B83E /* Bullet.cpp */; };
+		6614474D21DB0CBF0036B83E /* Tank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474B21DB0CBF0036B83E /* Tank.cpp */; };
 		66E0F4FD21D8D7CE00154234 /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4E721D8D7CC00154234 /* LoadingScene.cpp */; };
 		66E0F4FE21D8D7CE00154234 /* SceneM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EA21D8D7CC00154234 /* SceneM.cpp */; };
 		66E0F4FF21D8D7CE00154234 /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EB21D8D7CC00154234 /* Global.cpp */; };
@@ -263,6 +266,12 @@
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		6614474121DAF0E30036B83E /* Bonus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bonus.cpp; sourceTree = "<group>"; };
 		6614474221DAF0E30036B83E /* Bonus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bonus.hpp; sourceTree = "<group>"; };
+		6614474521DAF8600036B83E /* BulletM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BulletM.cpp; sourceTree = "<group>"; };
+		6614474621DAF8600036B83E /* BulletM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BulletM.hpp; sourceTree = "<group>"; };
+		6614474821DAF8AE0036B83E /* Bullet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		6614474921DAF8AE0036B83E /* Bullet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bullet.hpp; sourceTree = "<group>"; };
+		6614474B21DB0CBF0036B83E /* Tank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tank.cpp; sourceTree = "<group>"; };
+		6614474C21DB0CBF0036B83E /* Tank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tank.hpp; sourceTree = "<group>"; };
 		66E0F4E721D8D7CC00154234 /* LoadingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingScene.cpp; sourceTree = "<group>"; };
 		66E0F4E821D8D7CC00154234 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
 		66E0F4E921D8D7CC00154234 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
@@ -605,6 +614,12 @@
 				66E0F61F21D9112800154234 /* Score.hpp */,
 				6614474121DAF0E30036B83E /* Bonus.cpp */,
 				6614474221DAF0E30036B83E /* Bonus.hpp */,
+				6614474521DAF8600036B83E /* BulletM.cpp */,
+				6614474621DAF8600036B83E /* BulletM.hpp */,
+				6614474821DAF8AE0036B83E /* Bullet.cpp */,
+				6614474921DAF8AE0036B83E /* Bullet.hpp */,
+				6614474B21DB0CBF0036B83E /* Tank.cpp */,
+				6614474C21DB0CBF0036B83E /* Tank.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -1059,6 +1074,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E0F4FE21D8D7CE00154234 /* SceneM.cpp in Sources */,
+				6614474721DAF8600036B83E /* BulletM.cpp in Sources */,
 				66E0F50521D8D7CE00154234 /* MenuScene.cpp in Sources */,
 				66E0F50421D8D7CE00154234 /* TransitionEx.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
@@ -1069,9 +1085,11 @@
 				66E0F50721D8D7CE00154234 /* GameOverScene.cpp in Sources */,
 				6614474321DAF0E30036B83E /* Bonus.cpp in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
+				6614474D21DB0CBF0036B83E /* Tank.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				66E0F50621D8D7CE00154234 /* Joystick.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
+				6614474A21DAF8AE0036B83E /* Bullet.cpp in Sources */,
 				66E0F50321D8D7CE00154234 /* GameScene.cpp in Sources */,
 				66E0F4FD21D8D7CE00154234 /* LoadingScene.cpp in Sources */,
 				66E0F61C21D8F9B600154234 /* Stage.cpp in Sources */,

@@ -22,6 +22,7 @@ SceneM * SceneM::getInstance() {
 }
 bool SceneM::init()
 {
+    return true;
 }
 
 void SceneM::changeScene(SceneType sceneTpye, TransitionType transitionType) {

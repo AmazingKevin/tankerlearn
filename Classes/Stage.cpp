@@ -12,8 +12,8 @@
 #include <sstream>
 #include <string>
 using namespace std;
-Stage::Stage():
-_enemyID(0),
+ 
+ 
 
 
 
