@@ -6,3 +6,15 @@
 //
 
 #include "Stage.hpp"
+#include "GameScene.h"
+#include "DataM.h"
+#include "SceneM.h"
+#include <sstream>
+#include <string>
+using namespace std;
+Stage::Stage():
+_enemyID(0),
+
+
+
+
