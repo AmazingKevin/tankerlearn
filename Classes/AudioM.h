@@ -5,7 +5,6 @@
 #include <cocos/audio/include/AudioEngine.h>
 #include "cocos2d.h"
 
-
 USING_NS_CC;
 using namespace experimental;
 
@@ -40,7 +39,7 @@ const auto A_PLAYER_MOVE = "playermove.ogg";
 #endif
 
 /* 声音管理类 */
-class AudioM : public AudioEngineImpl
+class AudioM : public experimental::AudioEngineImpl
 {
 public:
 	/* 预加载声音 */

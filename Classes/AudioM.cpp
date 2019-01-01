@@ -8,7 +8,7 @@ void AudioM::preloadAllAudio()
 		A_METAL, A_OBSTACLE_BOMB, A_PAUSE, A_PLAYER_BOMB, A_PLAYER_MOVE, A_SHOW_BONUS, A_SLIP, A_START };
 	for (auto name : audio)
 	{
-		AudioEngineImpl::preload(name, [=](Ref* pSender){});
+		 
 	}
 }
 
@@ -20,7 +20,7 @@ int AudioM::play2d(const std::string& filePath, bool loop, float volume, const A
 	if (filePath == A_START)
 	{
 		_startAudioPlaying = true;
-		AudioM::setFinishCallback(audioID, [&](int id, const std::string& filePath){
+        cocos2d::experimental::AudioEngine::setFinishCallback(audioID, [&](int id, const std::string& filePath){
 			_startAudioPlaying = false;
 			NotificationCenter::getInstance()->postNotification("start_audio_end");
 		});
