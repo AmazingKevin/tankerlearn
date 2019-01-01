@@ -23,11 +23,18 @@ enum GameState//游戏状态
 
 class GameScene:public Scene{
 public:
+    GameScene();
+    ~GameScene();
     static Scene* createScene();
     virtual bool init();
     CREATE_FUNC(GameScene);
 
     virtual void onEnterTransitionDidFinish();
+private:
+    static GameState _gameState;//游戏状态
+    static Stage * _stage;//舞台类
+    
+    
     
 
 };

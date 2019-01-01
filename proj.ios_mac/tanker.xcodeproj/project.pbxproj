@@ -37,6 +37,9 @@
 		6614474721DAF8600036B83E /* BulletM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474521DAF8600036B83E /* BulletM.cpp */; };
 		6614474A21DAF8AE0036B83E /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474821DAF8AE0036B83E /* Bullet.cpp */; };
 		6614474D21DB0CBF0036B83E /* Tank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474B21DB0CBF0036B83E /* Tank.cpp */; };
+		6614475021DB705A0036B83E /* TankM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474E21DB705A0036B83E /* TankM.cpp */; };
+		6614475321DB70AE0036B83E /* EnemyTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614475121DB70AE0036B83E /* EnemyTank.cpp */; };
+		6614475621DB70E10036B83E /* PlayerTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614475421DB70E10036B83E /* PlayerTank.cpp */; };
 		66E0F4FD21D8D7CE00154234 /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4E721D8D7CC00154234 /* LoadingScene.cpp */; };
 		66E0F4FE21D8D7CE00154234 /* SceneM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EA21D8D7CC00154234 /* SceneM.cpp */; };
 		66E0F4FF21D8D7CE00154234 /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EB21D8D7CC00154234 /* Global.cpp */; };
@@ -272,6 +275,12 @@
 		6614474921DAF8AE0036B83E /* Bullet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bullet.hpp; sourceTree = "<group>"; };
 		6614474B21DB0CBF0036B83E /* Tank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tank.cpp; sourceTree = "<group>"; };
 		6614474C21DB0CBF0036B83E /* Tank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tank.hpp; sourceTree = "<group>"; };
+		6614474E21DB705A0036B83E /* TankM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TankM.cpp; sourceTree = "<group>"; };
+		6614474F21DB705A0036B83E /* TankM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TankM.hpp; sourceTree = "<group>"; };
+		6614475121DB70AE0036B83E /* EnemyTank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyTank.cpp; sourceTree = "<group>"; };
+		6614475221DB70AE0036B83E /* EnemyTank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EnemyTank.hpp; sourceTree = "<group>"; };
+		6614475421DB70E10036B83E /* PlayerTank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerTank.cpp; sourceTree = "<group>"; };
+		6614475521DB70E10036B83E /* PlayerTank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PlayerTank.hpp; sourceTree = "<group>"; };
 		66E0F4E721D8D7CC00154234 /* LoadingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingScene.cpp; sourceTree = "<group>"; };
 		66E0F4E821D8D7CC00154234 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
 		66E0F4E921D8D7CC00154234 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
@@ -620,6 +629,12 @@
 				6614474921DAF8AE0036B83E /* Bullet.hpp */,
 				6614474B21DB0CBF0036B83E /* Tank.cpp */,
 				6614474C21DB0CBF0036B83E /* Tank.hpp */,
+				6614474E21DB705A0036B83E /* TankM.cpp */,
+				6614474F21DB705A0036B83E /* TankM.hpp */,
+				6614475121DB70AE0036B83E /* EnemyTank.cpp */,
+				6614475221DB70AE0036B83E /* EnemyTank.hpp */,
+				6614475421DB70E10036B83E /* PlayerTank.cpp */,
+				6614475521DB70E10036B83E /* PlayerTank.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -1086,9 +1101,12 @@
 				6614474321DAF0E30036B83E /* Bonus.cpp in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
 				6614474D21DB0CBF0036B83E /* Tank.cpp in Sources */,
+				6614475021DB705A0036B83E /* TankM.cpp in Sources */,
+				6614475321DB70AE0036B83E /* EnemyTank.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				66E0F50621D8D7CE00154234 /* Joystick.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
+				6614475621DB70E10036B83E /* PlayerTank.cpp in Sources */,
 				6614474A21DAF8AE0036B83E /* Bullet.cpp in Sources */,
 				66E0F50321D8D7CE00154234 /* GameScene.cpp in Sources */,
 				66E0F4FD21D8D7CE00154234 /* LoadingScene.cpp in Sources */,

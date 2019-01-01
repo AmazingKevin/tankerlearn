@@ -25,7 +25,7 @@ protected:
     void moveUp();
     void moveRight();
     void moveLeft();
-    void moveUp();
+    void moveDown();
     void turnRight();
     void turnLeft();
     void turnUp();
