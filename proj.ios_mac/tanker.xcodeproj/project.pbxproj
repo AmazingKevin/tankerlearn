@@ -33,24 +33,6 @@
 		5087E78917EB974C00C73F5D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78817EB974C00C73F5D /* AppKit.framework */; };
 		5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78A17EB975400C73F5D /* OpenGL.framework */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
-		6614474321DAF0E30036B83E /* Bonus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474121DAF0E30036B83E /* Bonus.cpp */; };
-		6614474721DAF8600036B83E /* BulletM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474521DAF8600036B83E /* BulletM.cpp */; };
-		6614474A21DAF8AE0036B83E /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474821DAF8AE0036B83E /* Bullet.cpp */; };
-		6614474D21DB0CBF0036B83E /* Tank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474B21DB0CBF0036B83E /* Tank.cpp */; };
-		6614475021DB705A0036B83E /* TankM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614474E21DB705A0036B83E /* TankM.cpp */; };
-		6614475321DB70AE0036B83E /* EnemyTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614475121DB70AE0036B83E /* EnemyTank.cpp */; };
-		6614475621DB70E10036B83E /* PlayerTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6614475421DB70E10036B83E /* PlayerTank.cpp */; };
-		66E0F4FD21D8D7CE00154234 /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4E721D8D7CC00154234 /* LoadingScene.cpp */; };
-		66E0F4FE21D8D7CE00154234 /* SceneM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EA21D8D7CC00154234 /* SceneM.cpp */; };
-		66E0F4FF21D8D7CE00154234 /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EB21D8D7CC00154234 /* Global.cpp */; };
-		66E0F50021D8D7CE00154234 /* AudioM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EC21D8D7CC00154234 /* AudioM.cpp */; };
-		66E0F50121D8D7CE00154234 /* LevelScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4ED21D8D7CC00154234 /* LevelScene.cpp */; };
-		66E0F50221D8D7CE00154234 /* DataM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4EF21D8D7CC00154234 /* DataM.cpp */; };
-		66E0F50321D8D7CE00154234 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4F121D8D7CC00154234 /* GameScene.cpp */; };
-		66E0F50421D8D7CE00154234 /* TransitionEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4F221D8D7CC00154234 /* TransitionEx.cpp */; };
-		66E0F50521D8D7CE00154234 /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4F421D8D7CD00154234 /* MenuScene.cpp */; };
-		66E0F50621D8D7CE00154234 /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4F821D8D7CD00154234 /* Joystick.cpp */; };
-		66E0F50721D8D7CE00154234 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F4FC21D8D7CE00154234 /* GameOverScene.cpp */; };
 		66E0F59321D8D7EF00154234 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E0F50821D8D7EF00154234 /* HelloWorld.png */; };
 		66E0F59421D8D7EF00154234 /* bomb.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66E0F50A21D8D7EF00154234 /* bomb.plist */; };
 		66E0F59521D8D7EF00154234 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E0F50B21D8D7EF00154234 /* bomb.png */; };
@@ -185,8 +167,29 @@
 		66E0F61621D8D7F000154234 /* slip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66E0F58F21D8D7EF00154234 /* slip.mp3 */; };
 		66E0F61721D8D7F000154234 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66E0F59021D8D7EF00154234 /* start.mp3 */; };
 		66E0F61821D8D7F000154234 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 66E0F59221D8D7EF00154234 /* .gitkeep */; };
-		66E0F61C21D8F9B600154234 /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F61A21D8F9B600154234 /* Stage.cpp */; };
-		66E0F62021D9112800154234 /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E0F61E21D9112800154234 /* Score.cpp */; };
+		66E3701221DD06B200F46EBD /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FE321DD06A900F46EBD /* Bullet.cpp */; };
+		66E3701321DD06B200F46EBD /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FE521DD06A900F46EBD /* LoadingScene.cpp */; };
+		66E3701421DD06B200F46EBD /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FE721DD06A900F46EBD /* Global.cpp */; };
+		66E3701521DD06B200F46EBD /* AudioM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FE821DD06AA00F46EBD /* AudioM.cpp */; };
+		66E3701621DD06B200F46EBD /* LevelScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FE921DD06AA00F46EBD /* LevelScene.cpp */; };
+		66E3701721DD06B200F46EBD /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FEB21DD06AA00F46EBD /* AppDelegate.cpp */; };
+		66E3701821DD06B200F46EBD /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FEC21DD06AA00F46EBD /* GameScene.cpp */; };
+		66E3701921DD06B200F46EBD /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FEE21DD06AB00F46EBD /* Score.cpp */; };
+		66E3701A21DD06B200F46EBD /* Bomb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FF021DD06AB00F46EBD /* Bomb.cpp */; };
+		66E3701B21DD06B200F46EBD /* Tank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FF221DD06AC00F46EBD /* Tank.cpp */; };
+		66E3701C21DD06B200F46EBD /* BulletM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FF321DD06AC00F46EBD /* BulletM.cpp */; };
+		66E3701D21DD06B200F46EBD /* Bonus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FF421DD06AC00F46EBD /* Bonus.cpp */; };
+		66E3701E21DD06B200F46EBD /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FF821DD06AD00F46EBD /* Stage.cpp */; };
+		66E3701F21DD06B200F46EBD /* SceneM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FFD21DD06AE00F46EBD /* SceneM.cpp */; };
+		66E3702021DD06B200F46EBD /* TankM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E36FFF21DD06AF00F46EBD /* TankM.cpp */; };
+		66E3702121DD06B200F46EBD /* DataM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3700021DD06AF00F46EBD /* DataM.cpp */; };
+		66E3702221DD06B200F46EBD /* TransitionEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3700321DD06AF00F46EBD /* TransitionEx.cpp */; };
+		66E3702321DD06B200F46EBD /* EnemyTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3700521DD06B000F46EBD /* EnemyTank.cpp */; };
+		66E3702421DD06B200F46EBD /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3700721DD06B000F46EBD /* MenuScene.cpp */; };
+		66E3702521DD06B200F46EBD /* BombM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3700821DD06B000F46EBD /* BombM.cpp */; };
+		66E3702621DD06B200F46EBD /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3700A21DD06B100F46EBD /* Joystick.cpp */; };
+		66E3702721DD06B200F46EBD /* PlayerTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3701021DD06B200F46EBD /* PlayerTank.cpp */; };
+		66E3702821DD06B200F46EBD /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E3701121DD06B200F46EBD /* GameOverScene.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -256,7 +259,6 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		294D0D631D0D56D500F7F5D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
-		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
@@ -267,42 +269,6 @@
 		5087E78817EB974C00C73F5D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5087E78A17EB975400C73F5D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		6614474121DAF0E30036B83E /* Bonus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bonus.cpp; sourceTree = "<group>"; };
-		6614474221DAF0E30036B83E /* Bonus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bonus.hpp; sourceTree = "<group>"; };
-		6614474521DAF8600036B83E /* BulletM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BulletM.cpp; sourceTree = "<group>"; };
-		6614474621DAF8600036B83E /* BulletM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BulletM.hpp; sourceTree = "<group>"; };
-		6614474821DAF8AE0036B83E /* Bullet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
-		6614474921DAF8AE0036B83E /* Bullet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bullet.hpp; sourceTree = "<group>"; };
-		6614474B21DB0CBF0036B83E /* Tank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tank.cpp; sourceTree = "<group>"; };
-		6614474C21DB0CBF0036B83E /* Tank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tank.hpp; sourceTree = "<group>"; };
-		6614474E21DB705A0036B83E /* TankM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TankM.cpp; sourceTree = "<group>"; };
-		6614474F21DB705A0036B83E /* TankM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TankM.hpp; sourceTree = "<group>"; };
-		6614475121DB70AE0036B83E /* EnemyTank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyTank.cpp; sourceTree = "<group>"; };
-		6614475221DB70AE0036B83E /* EnemyTank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EnemyTank.hpp; sourceTree = "<group>"; };
-		6614475421DB70E10036B83E /* PlayerTank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerTank.cpp; sourceTree = "<group>"; };
-		6614475521DB70E10036B83E /* PlayerTank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PlayerTank.hpp; sourceTree = "<group>"; };
-		66E0F4E721D8D7CC00154234 /* LoadingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingScene.cpp; sourceTree = "<group>"; };
-		66E0F4E821D8D7CC00154234 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
-		66E0F4E921D8D7CC00154234 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		66E0F4EA21D8D7CC00154234 /* SceneM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneM.cpp; sourceTree = "<group>"; };
-		66E0F4EB21D8D7CC00154234 /* Global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Global.cpp; sourceTree = "<group>"; };
-		66E0F4EC21D8D7CC00154234 /* AudioM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioM.cpp; sourceTree = "<group>"; };
-		66E0F4ED21D8D7CC00154234 /* LevelScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelScene.cpp; sourceTree = "<group>"; };
-		66E0F4EE21D8D7CC00154234 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
-		66E0F4EF21D8D7CC00154234 /* DataM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataM.cpp; sourceTree = "<group>"; };
-		66E0F4F021D8D7CC00154234 /* AudioM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioM.h; sourceTree = "<group>"; };
-		66E0F4F121D8D7CC00154234 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
-		66E0F4F221D8D7CC00154234 /* TransitionEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransitionEx.cpp; sourceTree = "<group>"; };
-		66E0F4F321D8D7CD00154234 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
-		66E0F4F421D8D7CD00154234 /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuScene.cpp; sourceTree = "<group>"; };
-		66E0F4F521D8D7CD00154234 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
-		66E0F4F621D8D7CD00154234 /* LevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelScene.h; sourceTree = "<group>"; };
-		66E0F4F721D8D7CD00154234 /* TransitionEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionEx.h; sourceTree = "<group>"; };
-		66E0F4F821D8D7CD00154234 /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joystick.cpp; sourceTree = "<group>"; };
-		66E0F4F921D8D7CD00154234 /* DataM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataM.h; sourceTree = "<group>"; };
-		66E0F4FA21D8D7CD00154234 /* SceneM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneM.h; sourceTree = "<group>"; };
-		66E0F4FB21D8D7CD00154234 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
-		66E0F4FC21D8D7CE00154234 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverScene.cpp; sourceTree = "<group>"; };
 		66E0F50821D8D7EF00154234 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		66E0F50A21D8D7EF00154234 /* bomb.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bomb.plist; sourceTree = "<group>"; };
 		66E0F50B21D8D7EF00154234 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
@@ -437,10 +403,52 @@
 		66E0F58F21D8D7EF00154234 /* slip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slip.mp3; sourceTree = "<group>"; };
 		66E0F59021D8D7EF00154234 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
 		66E0F59221D8D7EF00154234 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		66E0F61A21D8F9B600154234 /* Stage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stage.cpp; sourceTree = "<group>"; };
-		66E0F61B21D8F9B600154234 /* Stage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stage.hpp; sourceTree = "<group>"; };
-		66E0F61E21D9112800154234 /* Score.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Score.cpp; sourceTree = "<group>"; };
-		66E0F61F21D9112800154234 /* Score.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Score.hpp; sourceTree = "<group>"; };
+		66E36FE321DD06A900F46EBD /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		66E36FE521DD06A900F46EBD /* LoadingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingScene.cpp; sourceTree = "<group>"; };
+		66E36FE621DD06A900F46EBD /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		66E36FE721DD06A900F46EBD /* Global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Global.cpp; sourceTree = "<group>"; };
+		66E36FE821DD06AA00F46EBD /* AudioM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioM.cpp; sourceTree = "<group>"; };
+		66E36FE921DD06AA00F46EBD /* LevelScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelScene.cpp; sourceTree = "<group>"; };
+		66E36FEA21DD06AA00F46EBD /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
+		66E36FEB21DD06AA00F46EBD /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		66E36FEC21DD06AA00F46EBD /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		66E36FED21DD06AB00F46EBD /* BombM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BombM.h; sourceTree = "<group>"; };
+		66E36FEE21DD06AB00F46EBD /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Score.cpp; sourceTree = "<group>"; };
+		66E36FEF21DD06AB00F46EBD /* Bomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bomb.h; sourceTree = "<group>"; };
+		66E36FF021DD06AB00F46EBD /* Bomb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bomb.cpp; sourceTree = "<group>"; };
+		66E36FF121DD06AB00F46EBD /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		66E36FF221DD06AC00F46EBD /* Tank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tank.cpp; sourceTree = "<group>"; };
+		66E36FF321DD06AC00F46EBD /* BulletM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletM.cpp; sourceTree = "<group>"; };
+		66E36FF421DD06AC00F46EBD /* Bonus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bonus.cpp; sourceTree = "<group>"; };
+		66E36FF521DD06AC00F46EBD /* DataM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataM.h; sourceTree = "<group>"; };
+		66E36FF621DD06AD00F46EBD /* PlayerTank.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerTank.hpp; sourceTree = "<group>"; };
+		66E36FF721DD06AD00F46EBD /* SceneM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneM.h; sourceTree = "<group>"; };
+		66E36FF821DD06AD00F46EBD /* Stage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stage.cpp; sourceTree = "<group>"; };
+		66E36FF921DD06AD00F46EBD /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		66E36FFA21DD06AE00F46EBD /* TankM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TankM.hpp; sourceTree = "<group>"; };
+		66E36FFB21DD06AE00F46EBD /* Bonus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bonus.hpp; sourceTree = "<group>"; };
+		66E36FFC21DD06AE00F46EBD /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		66E36FFD21DD06AE00F46EBD /* SceneM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneM.cpp; sourceTree = "<group>"; };
+		66E36FFE21DD06AE00F46EBD /* Bullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bullet.hpp; sourceTree = "<group>"; };
+		66E36FFF21DD06AF00F46EBD /* TankM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TankM.cpp; sourceTree = "<group>"; };
+		66E3700021DD06AF00F46EBD /* DataM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataM.cpp; sourceTree = "<group>"; };
+		66E3700121DD06AF00F46EBD /* Tank.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Tank.hpp; sourceTree = "<group>"; };
+		66E3700221DD06AF00F46EBD /* AudioM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioM.h; sourceTree = "<group>"; };
+		66E3700321DD06AF00F46EBD /* TransitionEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransitionEx.cpp; sourceTree = "<group>"; };
+		66E3700421DD06B000F46EBD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66E3700521DD06B000F46EBD /* EnemyTank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyTank.cpp; sourceTree = "<group>"; };
+		66E3700621DD06B000F46EBD /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		66E3700721DD06B000F46EBD /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuScene.cpp; sourceTree = "<group>"; };
+		66E3700821DD06B000F46EBD /* BombM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BombM.cpp; sourceTree = "<group>"; };
+		66E3700921DD06B000F46EBD /* LevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelScene.h; sourceTree = "<group>"; };
+		66E3700A21DD06B100F46EBD /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joystick.cpp; sourceTree = "<group>"; };
+		66E3700B21DD06B100F46EBD /* TransitionEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionEx.h; sourceTree = "<group>"; };
+		66E3700C21DD06B100F46EBD /* Score.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Score.hpp; sourceTree = "<group>"; };
+		66E3700D21DD06B100F46EBD /* BulletM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BulletM.hpp; sourceTree = "<group>"; };
+		66E3700E21DD06B100F46EBD /* Stage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Stage.hpp; sourceTree = "<group>"; };
+		66E3700F21DD06B100F46EBD /* EnemyTank.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnemyTank.hpp; sourceTree = "<group>"; };
+		66E3701021DD06B200F46EBD /* PlayerTank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerTank.cpp; sourceTree = "<group>"; };
+		66E3701121DD06B200F46EBD /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverScene.cpp; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -593,48 +601,53 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66E36FEB21DD06AA00F46EBD /* AppDelegate.cpp */,
+				66E3700421DD06B000F46EBD /* AppDelegate.h */,
+				66E36FE821DD06AA00F46EBD /* AudioM.cpp */,
+				66E3700221DD06AF00F46EBD /* AudioM.h */,
+				66E36FF021DD06AB00F46EBD /* Bomb.cpp */,
+				66E36FEF21DD06AB00F46EBD /* Bomb.h */,
+				66E3700821DD06B000F46EBD /* BombM.cpp */,
+				66E36FED21DD06AB00F46EBD /* BombM.h */,
+				66E36FF421DD06AC00F46EBD /* Bonus.cpp */,
+				66E36FFB21DD06AE00F46EBD /* Bonus.hpp */,
+				66E36FE321DD06A900F46EBD /* Bullet.cpp */,
+				66E36FFE21DD06AE00F46EBD /* Bullet.hpp */,
+				66E36FF321DD06AC00F46EBD /* BulletM.cpp */,
+				66E3700D21DD06B100F46EBD /* BulletM.hpp */,
+				66E3700021DD06AF00F46EBD /* DataM.cpp */,
+				66E36FF521DD06AC00F46EBD /* DataM.h */,
+				66E3700521DD06B000F46EBD /* EnemyTank.cpp */,
+				66E3700F21DD06B100F46EBD /* EnemyTank.hpp */,
+				66E3701121DD06B200F46EBD /* GameOverScene.cpp */,
+				66E36FF921DD06AD00F46EBD /* GameOverScene.h */,
+				66E36FEC21DD06AA00F46EBD /* GameScene.cpp */,
+				66E36FE621DD06A900F46EBD /* GameScene.h */,
+				66E36FE721DD06A900F46EBD /* Global.cpp */,
+				66E36FF121DD06AB00F46EBD /* Global.h */,
+				66E3700A21DD06B100F46EBD /* Joystick.cpp */,
+				66E3700621DD06B000F46EBD /* Joystick.h */,
+				66E36FE921DD06AA00F46EBD /* LevelScene.cpp */,
+				66E3700921DD06B000F46EBD /* LevelScene.h */,
+				66E36FE521DD06A900F46EBD /* LoadingScene.cpp */,
+				66E36FEA21DD06AA00F46EBD /* LoadingScene.h */,
+				66E3700721DD06B000F46EBD /* MenuScene.cpp */,
+				66E36FFC21DD06AE00F46EBD /* MenuScene.h */,
+				66E3701021DD06B200F46EBD /* PlayerTank.cpp */,
+				66E36FF621DD06AD00F46EBD /* PlayerTank.hpp */,
+				66E36FFD21DD06AE00F46EBD /* SceneM.cpp */,
+				66E36FF721DD06AD00F46EBD /* SceneM.h */,
+				66E36FEE21DD06AB00F46EBD /* Score.cpp */,
+				66E3700C21DD06B100F46EBD /* Score.hpp */,
+				66E36FF821DD06AD00F46EBD /* Stage.cpp */,
+				66E3700E21DD06B100F46EBD /* Stage.hpp */,
+				66E36FF221DD06AC00F46EBD /* Tank.cpp */,
+				66E3700121DD06AF00F46EBD /* Tank.hpp */,
+				66E36FFF21DD06AF00F46EBD /* TankM.cpp */,
+				66E36FFA21DD06AE00F46EBD /* TankM.hpp */,
+				66E3700321DD06AF00F46EBD /* TransitionEx.cpp */,
+				66E3700B21DD06B100F46EBD /* TransitionEx.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
-				66E0F4EC21D8D7CC00154234 /* AudioM.cpp */,
-				66E0F4F021D8D7CC00154234 /* AudioM.h */,
-				66E0F4EF21D8D7CC00154234 /* DataM.cpp */,
-				66E0F4F921D8D7CD00154234 /* DataM.h */,
-				66E0F4FC21D8D7CE00154234 /* GameOverScene.cpp */,
-				66E0F4FB21D8D7CD00154234 /* GameOverScene.h */,
-				66E0F4F121D8D7CC00154234 /* GameScene.cpp */,
-				66E0F4E921D8D7CC00154234 /* GameScene.h */,
-				66E0F4EB21D8D7CC00154234 /* Global.cpp */,
-				66E0F4F521D8D7CD00154234 /* Global.h */,
-				66E0F4F821D8D7CD00154234 /* Joystick.cpp */,
-				66E0F4F321D8D7CD00154234 /* Joystick.h */,
-				66E0F4ED21D8D7CC00154234 /* LevelScene.cpp */,
-				66E0F4F621D8D7CD00154234 /* LevelScene.h */,
-				66E0F4E721D8D7CC00154234 /* LoadingScene.cpp */,
-				66E0F4EE21D8D7CC00154234 /* LoadingScene.h */,
-				66E0F4F421D8D7CD00154234 /* MenuScene.cpp */,
-				66E0F4E821D8D7CC00154234 /* MenuScene.h */,
-				66E0F4EA21D8D7CC00154234 /* SceneM.cpp */,
-				66E0F4FA21D8D7CD00154234 /* SceneM.h */,
-				66E0F4F221D8D7CC00154234 /* TransitionEx.cpp */,
-				66E0F4F721D8D7CD00154234 /* TransitionEx.h */,
-				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				66E0F61A21D8F9B600154234 /* Stage.cpp */,
-				66E0F61B21D8F9B600154234 /* Stage.hpp */,
-				66E0F61E21D9112800154234 /* Score.cpp */,
-				66E0F61F21D9112800154234 /* Score.hpp */,
-				6614474121DAF0E30036B83E /* Bonus.cpp */,
-				6614474221DAF0E30036B83E /* Bonus.hpp */,
-				6614474521DAF8600036B83E /* BulletM.cpp */,
-				6614474621DAF8600036B83E /* BulletM.hpp */,
-				6614474821DAF8AE0036B83E /* Bullet.cpp */,
-				6614474921DAF8AE0036B83E /* Bullet.hpp */,
-				6614474B21DB0CBF0036B83E /* Tank.cpp */,
-				6614474C21DB0CBF0036B83E /* Tank.hpp */,
-				6614474E21DB705A0036B83E /* TankM.cpp */,
-				6614474F21DB705A0036B83E /* TankM.hpp */,
-				6614475121DB70AE0036B83E /* EnemyTank.cpp */,
-				6614475221DB70AE0036B83E /* EnemyTank.hpp */,
-				6614475421DB70E10036B83E /* PlayerTank.cpp */,
-				6614475521DB70E10036B83E /* PlayerTank.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -1088,30 +1101,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E0F4FE21D8D7CE00154234 /* SceneM.cpp in Sources */,
-				6614474721DAF8600036B83E /* BulletM.cpp in Sources */,
-				66E0F50521D8D7CE00154234 /* MenuScene.cpp in Sources */,
-				66E0F50421D8D7CE00154234 /* TransitionEx.cpp in Sources */,
+				66E3701221DD06B200F46EBD /* Bullet.cpp in Sources */,
+				66E3701721DD06B200F46EBD /* AppDelegate.cpp in Sources */,
+				66E3702521DD06B200F46EBD /* BombM.cpp in Sources */,
+				66E3702721DD06B200F46EBD /* PlayerTank.cpp in Sources */,
+				66E3701621DD06B200F46EBD /* LevelScene.cpp in Sources */,
+				66E3701421DD06B200F46EBD /* Global.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
-				66E0F62021D9112800154234 /* Score.cpp in Sources */,
-				66E0F50021D8D7CE00154234 /* AudioM.cpp in Sources */,
-				66E0F50221D8D7CE00154234 /* DataM.cpp in Sources */,
-				66E0F4FF21D8D7CE00154234 /* Global.cpp in Sources */,
-				66E0F50721D8D7CE00154234 /* GameOverScene.cpp in Sources */,
-				6614474321DAF0E30036B83E /* Bonus.cpp in Sources */,
+				66E3702421DD06B200F46EBD /* MenuScene.cpp in Sources */,
+				66E3702621DD06B200F46EBD /* Joystick.cpp in Sources */,
+				66E3702021DD06B200F46EBD /* TankM.cpp in Sources */,
+				66E3701D21DD06B200F46EBD /* Bonus.cpp in Sources */,
+				66E3702221DD06B200F46EBD /* TransitionEx.cpp in Sources */,
+				66E3701C21DD06B200F46EBD /* BulletM.cpp in Sources */,
+				66E3701521DD06B200F46EBD /* AudioM.cpp in Sources */,
+				66E3701B21DD06B200F46EBD /* Tank.cpp in Sources */,
+				66E3701F21DD06B200F46EBD /* SceneM.cpp in Sources */,
+				66E3702821DD06B200F46EBD /* GameOverScene.cpp in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
-				6614474D21DB0CBF0036B83E /* Tank.cpp in Sources */,
-				6614475021DB705A0036B83E /* TankM.cpp in Sources */,
-				6614475321DB70AE0036B83E /* EnemyTank.cpp in Sources */,
+				66E3701A21DD06B200F46EBD /* Bomb.cpp in Sources */,
+				66E3701E21DD06B200F46EBD /* Stage.cpp in Sources */,
+				66E3701321DD06B200F46EBD /* LoadingScene.cpp in Sources */,
+				66E3701821DD06B200F46EBD /* GameScene.cpp in Sources */,
+				66E3701921DD06B200F46EBD /* Score.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				66E0F50621D8D7CE00154234 /* Joystick.cpp in Sources */,
+				66E3702321DD06B200F46EBD /* EnemyTank.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
-				6614475621DB70E10036B83E /* PlayerTank.cpp in Sources */,
-				6614474A21DAF8AE0036B83E /* Bullet.cpp in Sources */,
-				66E0F50321D8D7CE00154234 /* GameScene.cpp in Sources */,
-				66E0F4FD21D8D7CE00154234 /* LoadingScene.cpp in Sources */,
-				66E0F61C21D8F9B600154234 /* Stage.cpp in Sources */,
-				66E0F50121D8D7CE00154234 /* LevelScene.cpp in Sources */,
+				66E3702121DD06B200F46EBD /* DataM.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

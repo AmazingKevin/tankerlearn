@@ -26,7 +26,7 @@ private:
     bool _addScore;
     bool _bonus;
     bool _bonusStep;
-}
+};
 
 
 
