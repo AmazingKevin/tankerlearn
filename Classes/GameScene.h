@@ -6,7 +6,8 @@
 #define PROJ_ANDROID_GAMESCENE_H
 #include "cocos2d.h"
 #include "Stage.hpp"
-
+#include "TankM.hpp"
+#include "BulletM.hpp"
 
 USING_NS_CC;
 
