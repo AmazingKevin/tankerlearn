@@ -7,7 +7,7 @@
 
 #include "cocos2d.h"
 USING_NS_CC;
-class Joystick:public Scene
+class Joystick:public Layer
 {
 public:
     Joystick();

@@ -10,7 +10,7 @@
 
 #include "cocos2d.h"
 #include "Bullet.hpp"
-class BulletM:public Scene{
+class BulletM:public Layer{
 public:
     BulletM();
     ~BulletM();

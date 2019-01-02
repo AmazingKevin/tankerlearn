@@ -7,7 +7,7 @@
 #include "cocos2d.h"
 #include "Bomb.h"
 USING_NS_CC;
-class BombM:public Scene
+class BombM:public Layer
 {
 public:
     BombM();

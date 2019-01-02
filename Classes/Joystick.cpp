@@ -24,7 +24,7 @@ Joystick::~Joystick() {
 }
 bool Joystick::init()
 {
-    if(!Scene::init())
+    if(!Layer::init())
     {
         return false;
     }

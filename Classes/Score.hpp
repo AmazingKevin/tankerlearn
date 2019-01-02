@@ -9,7 +9,7 @@
 #define Score_hpp
 #include "cocos2d.h"
 USING_NS_CC;
-class Score:public Scene
+class Score:public Layer
 {
 public:
     Score();

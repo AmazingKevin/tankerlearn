@@ -14,7 +14,7 @@
 #include "EnemyTank.hpp"
 USING_NS_CC;
 using namespace std;
-class TankM:public Scene
+class TankM:public Layer
 {
 public:
     TankM();
