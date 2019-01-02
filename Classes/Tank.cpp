@@ -107,14 +107,145 @@ bool Tank::shoot()
 {
     bool isShoot = false;
     Vec2 bulletPos;
-
-    
-    
+    auto bulletNum = GameScene::getBulletM()->getBulletNum(this);
+    if (bulletNum < _bulletNumMax)
+    {
+        if (_direction == UP)
+        {
+            bulletPos.x = _position.x;
+            bulletPos.y = _position.y + CELL_HEIGHT;
+        }
+        else if (_direction == DOWN)
+        {
+            bulletPos.x = _position.x;
+            bulletPos.y = _position.y - CELL_HEIGHT;
+        }
+        else if (_direction == LEFT)
+        {
+            bulletPos.x = _position.x - CELL_WIDTH;
+            bulletPos.y = _position.y;
+        }
+        else if (_direction == RIGHT)
+        {
+            bulletPos.x = _position.x + CELL_WIDTH;
+            bulletPos.y = _position.y;
+        }
+        GameScene::getBulletM()->createBullet(this, _bulletSpeed, _bulletPower, bulletPos, _direction);
+        isShoot = true;
+    }
     return isShoot;
+}
+void Tank::addStep()
+{
+    _step++;
+    if (_step >= _stepMax)
+    {
+        _step = 0;
+    }
+}
+
+bool Tank::collide(){
+    auto collide = false;
+    if (collideMap())
+    {
+        collide = true;
+    }
+    if (collideTank())
+    {
+        collide = true;
+    }
+    this->setPosition(_newPos);
+    return collide;
+}
+
+bool Tank::collideTank()
+{
+    auto collide = false;
+    auto &tanks =  GameScene::getTankM()->getAllTanks();
+    for(auto i = 0; i < tanks.size(); i++)
+    {
+        auto tank = tanks.at(i);
+        if (tank == this) continue;
+        auto otherPos = tank->getPosition();
+        if (_newPos.x > otherPos.x - 2 * CELL_WIDTH && _newPos.x < otherPos.x + 2 * CELL_WIDTH)
+        {
+            if (_position.y >= otherPos.y + 2 * CELL_HEIGHT && _newPos.y < otherPos.y + 2 * CELL_HEIGHT)
+            {
+                _newPos.y = otherPos.y + 2 * CELL_HEIGHT;
+                collide = true;
+            }
+            if (_position.y <= otherPos.y - 2 * CELL_HEIGHT && _newPos.y > otherPos.y - 2 * CELL_HEIGHT)
+            {
+                _newPos.y = otherPos.y - 2 * CELL_HEIGHT;
+                collide = true;
+            }
+        }
+        if (_newPos.y > otherPos.y - 2 * CELL_HEIGHT && _newPos.y < otherPos.y + 2 * CELL_HEIGHT)
+        {
+            if (_position.x >= otherPos.x + 2 * CELL_WIDTH && _newPos.x < otherPos.x + 2 * CELL_WIDTH)
+            {
+                _newPos.x = otherPos.x + 2 * CELL_WIDTH;
+                collide = true;
+            }
+
+            if (_position.x <= otherPos.x - 2 * CELL_WIDTH && _newPos.x > otherPos.x - 2 * CELL_WIDTH)
+            {
+                _newPos.x = otherPos.x - 2 * CELL_WIDTH;
+                collide = true;
+            }
+        }
+    }
+    return collide;
 }
 
 
-
+bool Tank::collideMap()
+{
+    int row, col;
+    auto collide = false;
+    auto stage = GameScene::getStage();
+    if (_direction == UP)
+    {
+        col = (int)(_newPos.x / CELL_WIDTH);
+        row = (int)(MAP_ROW - _newPos.y / CELL_HEIGHT) - 1;
+        if (row < 0 || !stage->isCanWalk(row, col) || !stage->isCanWalk(row, col - 1))
+        {
+            _newPos.y = (MAP_ROW - row - 2) * CELL_HEIGHT;
+            collide = true;
+        }
+    }
+    else if (_direction == DOWN)
+    {
+        col = (int)(_newPos.x / CELL_WIDTH);
+        row = (int)(MAP_ROW - _newPos.y / CELL_HEIGHT) + 1;
+        if (row > MAP_ROW - 1 || !stage->isCanWalk(row, col) || !stage->isCanWalk(row, col - 1))
+        {
+            _newPos.y = (MAP_ROW - row + 1) * CELL_HEIGHT;
+            collide = true;
+        }
+    }
+    else if (_direction == LEFT)
+    {
+        col = (int)(_newPos.x / CELL_WIDTH) - 1;
+        row = (int)(MAP_ROW - _newPos.y / CELL_HEIGHT);
+        if (col < 0 || !stage->isCanWalk(row, col) || !stage->isCanWalk(row - 1, col))
+        {
+            _newPos.x = (col + 2) * CELL_WIDTH;
+            collide = true;
+        }
+    }
+    else if (_direction == RIGHT)
+    {
+        col = (int)(_newPos.x / CELL_WIDTH) + 1;
+        row = (int)(MAP_ROW - _newPos.y / CELL_HEIGHT);
+        if (col > MAP_COL - 1 || !stage->isCanWalk(row, col) || !stage->isCanWalk(row - 1, col))
+        {
+            _newPos.x = (col - 1) * CELL_WIDTH;
+            collide = true;
+        }
+    }
+    return collide;
+}
 
 
 
